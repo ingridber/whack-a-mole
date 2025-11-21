@@ -43,7 +43,7 @@ Open `index.html` in your browser to play the game.
 ## Installation
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone <repository-url>```
 
 2. Navigate to the project folder:
 ```bash
