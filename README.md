@@ -41,6 +41,11 @@ Open `index.html` in your browser to play the game.
 ---
 
 ## Installation
+#### Online
+No installation needed: follow link below.
+[Github Pages](https://ingridber.github.io/whack-a-mole/)
+
+#### Locally
 1. Clone the repository:
 `bash git clone <repository-url>`
 
@@ -67,4 +72,27 @@ whack-a-mole/
 │   └─ mole.js         # Mole class logic
 └─ images/
     └─ Mole-in-a-hole.png   # Game icon
-´´´
+```
+---
+
+## Technologies Used
+
+- **HTML5** – Game structure
+- **CSS3** – Styling and animations
+- **JavaScript** (ES6 Modules) – Game logic, event handling
+
+--- 
+
+## Game Logic (the lazy way)
+
+- The game board contains 9 holes, each represented as a button.
+- The **Mole** class handles mole appearances, speed, and stopping conditions.
+- The **Game** class manages the game state, score tracking, and UI updates.
+- Mole speed increases as more moles appear:
+    - 1–3 moles: 2000ms interval
+    - 4–8 moles: 1000ms interval
+    - 9–13 moles: 800ms interval
+    - 14–18 moles: 700ms interval
+    - 19–25 moles: 600ms interval
+    - 26–30 moles: 500ms interval
+- The game ends when 30 moles have appeared or the **End Game** button is clicked.
