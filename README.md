@@ -68,8 +68,9 @@ whack-a-mole/
 ├─ style.css           # Styling for the game
 ├─ js/
 │   ├─ main.js         # Initializes the game
-│   ├─ game.js         # Game class logic
-│   └─ mole.js         # Mole class logic
+│   ├─ src/
+│       ├─ game.js         # Game class logic
+│       └─ mole.js         # Mole class logic
 └─ images/
     └─ Mole-in-a-hole.png   # Game icon
 ```
