@@ -42,12 +42,10 @@ Open `index.html` in your browser to play the game.
 
 ## Installation
 1. Clone the repository:
-`bash
-git clone <repository-url>`
+`bash git clone <repository-url>`
 
 2. Navigate to the project folder:
-```bash
-cd whack-a-mole
+`bash cd whack-a-mole`
 
 3. Open the game in your browser:
 - Simply double-click `index.html` **or**
@@ -58,7 +56,7 @@ No additional setup or packages are required. The game works offline.
 ---
 
 ## Project Structure
-
+```
 whack-a-mole/
 │
 ├─ index.html          # Main HTML file
@@ -69,4 +67,4 @@ whack-a-mole/
 │   └─ mole.js         # Mole class logic
 └─ images/
     └─ Mole-in-a-hole.png   # Game icon
-
+´´´
