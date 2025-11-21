@@ -42,7 +42,7 @@ Open `index.html` in your browser to play the game.
 
 ## Installation
 #### Online
-No installation needed: follow link below.
+No installation needed: 
 [Github Pages](https://ingridber.github.io/whack-a-mole/)
 
 #### Locally
