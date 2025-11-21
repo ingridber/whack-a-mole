@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whack-a-mole!</title>
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
+    <!-- FAVICON -->
+    <link rel="icon" href="images/Mole-in-a-hole.png" type="image/png">
+    <!-- SCRIPT -->
+    <script src="./js/main.js" type="module" defer></script>
+</head>
+<body>
+
+    <!-- <img src="./images/Mole-in-a-hole.png" alt="Picture of a mole"> -->
+    <h1 class="game-header">Lets play Whack-a-mole!</h1>
+
+    <h2 class="game-instructions-header">Game instructions:</h2>    
+    <p class="game-instructions-text"> • 30 moles will pop up on a board containing of 9 holes (3x3) <br>• Click (and whack) the mole when it pops up. 1 point per whack! <br>• They are clever creatures so they will pop up in a rateing speed to avoid the whacks<br> • But be careful, the mole keeps track of your strikes (missed whacks)</p>
+
+
+    <section id="game-controller">
+        <button id="start-game" class ="game-button">Start Game</button>
+        <button id="end-game" class= "game-button hide-end-game-button">End Game</button>
+    </section>
+    
+    <section id="game-tracker" class="hide-gametracker">
+        <p id="whack">Whacks: <span id="whack-count">0</span> </p>
+        <p id="strike">Strikes: <span id="strike-count">0</span> </p>
+        <p id="played-moles">Moles: <span id="mole-count">0</span> </p>
+    </section>
+
+    <section id="game-board">
+    </section>
+
+    
+</body>
+</html>

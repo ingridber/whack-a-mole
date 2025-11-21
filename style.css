@@ -1,0 +1,149 @@
+/* --------------- DEFAULT SETTINGS */
+
+:root {
+    font-family: 'Sniglet';
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lemonchiffon;
+}
+
+/* --------------- GAME INTRODUCTION */
+.game-header {
+    margin: 2% 0 0 0;
+    font-size: clamp(25px, 4vw, 100px);
+    color: #673105;
+}
+
+.game-instructions-header {
+    margin: 2% 0 0 0;
+    font-size: clamp(18px, 2vw, 100px);
+}
+
+.game-instructions-text {
+    margin: 0 0 1.5% 0;
+    font-size: clamp(12px, 1.1vw, 100px);
+    line-height: 1.5;
+}
+
+/* --------------- NAVIGATE GAME BUTTONS */
+.game-button {
+    width: 10vw;
+    min-width: 150px;
+    padding: 1% 0 1% 0;
+    margin: 1vw;
+    font-size: 20px;
+    font-family: 'Sniglet';
+    color: lemonchiffon;
+    border: 2px solid #673105;
+    border-radius: 30px;
+}
+
+.game-button:hover {
+    border-style: dashed;
+    background-color: lemonchiffon !important;
+}
+
+#start-game {
+    background-color: green;
+}
+
+#start-game:hover {
+    border-color: green;
+    color: green;
+}
+
+#end-game {
+    background-color: red;
+}
+
+#end-game:hover {
+    border-color: red;
+    color: red;
+}
+
+
+/* --------------- GAME TRACKER */
+#game-tracker, #game-board {
+    width: 30vw;
+    min-width: 350px;
+}
+
+#game-tracker {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #673105;
+    margin-bottom: 1%;
+}
+
+#whack, #strike, #played-moles {
+    display: flex;
+    align-items: center;
+}
+
+#whack-count, #strike-count, #mole-count {
+    font-weight: 400;
+    font-size: 150%;
+    margin: 5%;
+}
+
+.hide-gametracker {
+    visibility: hidden;
+}
+
+.hide-end-game-button {
+    display: none;
+}
+
+/* --------------- GAME BOARD */
+#game-board {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#game-board .hole {
+    flex: 0 0 30%;
+    margin: 1%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: #673105; 
+    border-style: none;
+}
+
+#game-board .hole:hover {
+    cursor: grab;
+}
+
+#game-board .mole {
+    background-image: url('./images/Mole-in-a-hole.png');
+    background-size: 130%;
+    background-position: center;
+}
+
+#game-board .mole:hover {
+    cursor: grabbing;
+}
+
+#game-board .fade {
+    opacity: 0.7;
+}
+
+#game-board #result {
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    z-index: 10;
+    margin: 0;
+    padding: 1%;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: lemonchiffon;
+}
